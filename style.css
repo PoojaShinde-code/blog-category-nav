@@ -1,0 +1,192 @@
+/* =========================================
+   MUZZ CATEGORY BAR
+   ========================================= */
+
+.muzz-category-bar {
+    width: 100%;
+    height: 112px;
+
+    background: #ff3f6c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   EACH CATEGORY
+   ========================================= */
+
+.muzz-category {
+    height: 100%;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ICONS
+   ========================================= */
+
+.muzz-heart {
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    transform: translateY(-1px);
+}
+
+
+.muzz-coffee {
+    font-size: 31px;
+
+    line-height: 1;
+
+    transform: rotate(180deg);
+}
+
+
+.muzz-community {
+    width: 32px;
+    height: 32px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+
+    line-height: 1;
+}
+
+
+.muzz-butterfly {
+    font-size: 37px;
+
+    transform: rotate(-45deg);
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   DIVIDERS
+   ========================================= */
+
+.muzz-divider {
+    width: 1px;
+    height: 46px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    display: block;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   REMOVE DEFAULT LINK EFFECTS
+   ========================================= */
+
+.muzz-category:visited,
+.muzz-category:active {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 1200px) {
+
+    .muzz-category {
+        width: 360px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1199px) {
+
+    .muzz-category {
+        width: 25vw;
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .muzz-category-bar {
+        height: auto;
+        min-height: 100px;
+
+        flex-wrap: wrap;
+
+        padding: 10px 0;
+    }
+
+    .muzz-category {
+        width: 50%;
+        height: 40px;
+
+        font-size: 18px;
+    }
+
+    .muzz-divider {
+        display: none;
+    }
+
+    .muzz-heart {
+        font-size: 27px;
+    }
+
+    .muzz-coffee,
+    .muzz-butterfly {
+        font-size: 25px;
+    }
+
+    .muzz-community {
+        width: 24px;
+        height: 24px;
+        font-size: 17px;
+    }
+}
